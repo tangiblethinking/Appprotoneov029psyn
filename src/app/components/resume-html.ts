@@ -8,7 +8,7 @@ export const resumeHTML = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Christopher Kenreigh – Lead Product Designer</title>
+  <title>Christopher Kenreigh – VP, UX Creative Director</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <style>
@@ -198,6 +198,7 @@ export const resumeHTML = `<!DOCTYPE html>
       font-size: 9pt;
       color: var(--mid);
       line-height: 1.6;
+      margin-bottom: 2px;
     }
 
     /* Education */
@@ -226,17 +227,6 @@ export const resumeHTML = `<!DOCTYPE html>
       vertical-align: middle;
     }
 
-    .share-link {
-      display: block;
-      text-align: right;
-      font-size: 8.5pt;
-      color: var(--blue);
-      text-decoration: none;
-      font-style: italic;
-      margin-top: 16px;
-    }
-    .share-link:hover { text-decoration: underline; }
-
     /* ── MOBILE RESPONSIVE ── */
     @media (max-width: 680px) {
       body {
@@ -244,100 +234,45 @@ export const resumeHTML = `<!DOCTYPE html>
         background: var(--bg);
         align-items: stretch;
       }
-
       .page {
         width: 100%;
         box-shadow: none;
         border-radius: 0;
       }
-
-      header {
-        padding: 20px 18px 14px;
-      }
-
-      header h1 {
-        font-size: 22pt;
-      }
-
-      header .title-line {
-        font-size: 9pt;
-      }
-
-      header .contact {
-        font-size: 9pt;
-        gap: 6px;
-        row-gap: 4px;
-      }
-
-      /* Stack sidebar above or below on mobile */
+      header { padding: 20px 18px 14px; }
+      header h1 { font-size: 22pt; }
+      header .title-line { font-size: 9pt; }
+      header .contact { font-size: 9pt; gap: 6px; row-gap: 4px; }
       .body {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
       }
-
       .main {
         padding: 18px 18px 24px;
         border-right: none;
         border-bottom: 1px solid var(--rule);
         order: 2;
       }
-
       .sidebar {
         padding: 18px 18px 20px;
         order: 1;
         border-bottom: 2px solid var(--rule);
       }
-
-      .section-title {
-        font-size: 13pt;
-      }
-
-      .sidebar .section-title {
-        font-size: 11pt;
-      }
-
-      .job ul li {
-        font-size: 9pt;
-      }
-
-      .job-meta {
-        font-size: 8pt;
-        gap: 4px;
-      }
-
-      .summary-quote {
-        font-size: 9pt;
-      }
-
-      .tag {
-        font-size: 7.5pt;
-      }
+      .section-title { font-size: 13pt; }
+      .sidebar .section-title { font-size: 11pt; }
+      .job ul li { font-size: 9pt; }
+      .job-meta { font-size: 8pt; gap: 4px; }
+      .summary-quote { font-size: 9pt; }
+      .tag { font-size: 7.5pt; }
     }
 
     @media (min-width: 681px) and (max-width: 900px) {
-      body {
-        padding: 16px 8px;
-      }
-
-      .page {
-        width: 100%;
-      }
-
-      header {
-        padding: 22px 24px 14px;
-      }
-
-      .main {
-        padding: 20px 24px 28px;
-      }
-
-      .sidebar {
-        padding: 20px 16px 28px;
-      }
-
-      .body {
-        grid-template-columns: 1fr 200px;
-      }
+      body { padding: 16px 8px; }
+      .page { width: 100%; }
+      header { padding: 22px 24px 14px; }
+      .main { padding: 20px 24px 28px; }
+      .sidebar { padding: 20px 16px 28px; }
+      .body { grid-template-columns: 1fr 200px; }
     }
 
     @media print {
@@ -352,7 +287,7 @@ export const resumeHTML = `<!DOCTYPE html>
   <!-- HEADER -->
   <header>
     <h1>Christopher Kenreigh</h1>
-    <div class="title-line">Strategic Digital Experiences | UX | Team Leadership | Business Strategy</div>
+    <div class="title-line">VP, UX Creative Director | Brand Strategy &amp; Visual Design | Enterprise Design Systems | Motion Design | ADA-Compliant Digital Experiences</div>
     <div class="contact">
       <span style="color: #212121; font-weight:700">480-206-2145</span>
       <span>|</span>
@@ -360,7 +295,7 @@ export const resumeHTML = `<!DOCTYPE html>
       <span>|</span>
       <a href="https://www.linkedin.com/in/kenreigh/" target="_blank">LinkedIn</a>
       <span>|</span>
-      <a href="https://seekenreigh.figma.site/" target="_blank">Portfolio</a>
+      <a href="https://www.uxapex.com/portfolioa27" target="_blank">Portfolio</a>
     </div>
   </header>
 
@@ -372,7 +307,7 @@ export const resumeHTML = `<!DOCTYPE html>
       <h2 class="section-title">Experience</h2>
 
       <div class="job">
-        <div class="job-title">Principal Product Designer</div>
+        <div class="job-title">VP, UX Creative Director &amp; Design Systems Lead (Principal)</div>
         <a class="job-company" href="https://www.plexusworldwide.com" target="_blank">Plexus Worldwide</a>
         <div class="job-meta">
           <span class="material-symbols-outlined">calendar_month</span>
@@ -381,16 +316,16 @@ export const resumeHTML = `<!DOCTYPE html>
           Phoenix, AZ | Office
         </div>
         <ul>
-          <li>Led 5 UX/content designers for US/international e-commerce, launching 3 regions</li>
-          <li>Spearheaded e-commerce modernization with PMs, developers, BI: identified user behavior insights via Power BI; redesigned website, portals, mobile-first PDPs/PLPs, cart flows; cut checkout abandonment 43%</li>
-          <li>Facilitated customer, stakeholder, and collaborative team workshops for iterative features, A/B tested prototypes for complex product interfaces.</li>
-          <li>Consolidated 6 tools into unified app, cutting inefficiencies 60%; implemented branded design system for CMS consistency</li>
-          <li>Led adoption of LLM-driven tools and workflows, increasing sprint delivery velocity by 35% across teams.</li>
+          <li>Directed visual and brand strategy across consumer eCommerce digital channels — defined typography, color systems, iconography, and motion design standards unifying brand identity across web, iOS, and Android</li>
+          <li>Architected enterprise Figma-native Digital Design System consolidating 6 tools into a governed component library — achieved 60–90% org adoption, $370K annual labor savings, 3× delivery velocity improvement</li>
+          <li>People-managed 5 UX/content designers; mentored on visual craft and brand standards; established quality review cycles enforcing design system adherence across agile teams</li>
+          <li>Championed AI innovation — shipped LLM-powered persona agent platform reversing –17% operating margin to +2% in four months; increased sprint velocity 35% through AI-driven creative workflows</li>
+          <li>Presented brand and creative strategy to C-suite; persuaded adoption of design system governance and UX as enterprise strategic function</li>
         </ul>
       </div>
 
       <div class="job">
-        <div class="job-title">Senior Product Designer</div>
+        <div class="job-title">Senior UX Creative Director — Regulated Digital Experiences</div>
         <a class="job-company" href="https://www.freeportmcmoran.com" target="_blank">Freeport-McMoRan</a>
         <div class="job-meta">
           <span class="material-symbols-outlined">calendar_month</span>
@@ -399,15 +334,15 @@ export const resumeHTML = `<!DOCTYPE html>
           Phoenix, AZ | Hybrid
         </div>
         <ul>
-          <li>Led end-to-end design for mining operation digital tools, improving worker efficiency by 30% through responsive web and mobile interfaces</li>
-          <li>Facilitated 10 workshops to define user needs, translating insights into actionable product requirements</li>
-          <li>Presented product roadmaps and Agile strategies to C-suite executives, securing approval for 5 major releases</li>
-          <li>Implemented a scalable UI design system, adopted across web, iOS, and Android platforms</li>
+          <li>Directed visual design and UX creative strategy for regulated enterprise digital tools — brand-consistent responsive web and mobile interfaces improving operational efficiency 30%</li>
+          <li>Built and governed scalable MUI React design system across web, iOS, and Android — component documentation, visual brand standards, and quality review guidelines enabling engineering autonomy</li>
+          <li>Facilitated 10+ design thinking workshops translating compliance requirements into user-centered, visually coherent product requirements</li>
+          <li>Presented UX creative roadmaps to C-suite; secured approval for 5 major product releases through outcome-driven visual design rationale</li>
         </ul>
       </div>
 
       <div class="job">
-        <div class="job-title">Senior Product Designer</div>
+        <div class="job-title">Senior UX Designer — Consumer Brand &amp; Digital Experience</div>
         <a class="job-company" href="https://www.opentechalliance.com" target="_blank">OpenTech Alliance</a>
         <div class="job-meta">
           <span class="material-symbols-outlined">calendar_month</span>
@@ -416,15 +351,15 @@ export const resumeHTML = `<!DOCTYPE html>
           Phoenix, AZ | Hybrid
         </div>
         <ul>
-          <li>Increased UX adoption by delivering C-suite presentations, securing budget for 3 new UX initiatives</li>
-          <li>Redesigned Point of Sale kiosk UI, boosting completion rates by 75%</li>
-          <li>Designed compliant user data capture processes, reducing legal risks by 100%</li>
-          <li>Enhanced e-commerce fulfillment by 25% through data-driven UX optimizations</li>
+          <li>Directed brand identity and visual design for industry-wide white-label software — defined consumer-facing UI patterns, iconography, and interaction standards across a broad merchant network</li>
+          <li>Designed ADA-compliant inclusive user data capture flows meeting regulatory requirements — 100% compliance while maintaining brand-consistent consumer-grade visual quality</li>
+          <li>Redesigned Point of Sale kiosk UI with visual design best practices and motion-informed interaction patterns — boosting task completion 75%</li>
+          <li>Evangelized user-centered design and brand standards to C-suite — secured budget for 3 UX initiatives and elevated design maturity org-wide</li>
         </ul>
       </div>
 
       <div class="job">
-        <div class="job-title">UX Design Operator</div>
+        <div class="job-title">UX Design Lead — Enterprise Brand &amp; Design Systems</div>
         <a class="job-company" href="https://www.siemens.com" target="_blank">Siemens</a>
         <div class="job-meta">
           <span class="material-symbols-outlined">calendar_month</span>
@@ -433,15 +368,14 @@ export const resumeHTML = `<!DOCTYPE html>
           Phoenix, AZ | Remote
         </div>
         <ul>
-          <li>Led cross-departmental collaboration to unify design systems across 4 projects</li>
-          <li>Reduced internal data dissemination needs by 50% through custom documents</li>
-          <li>Managed project planning and budgeting, securing approval for 2 high-impact initiatives</li>
-          <li>Designed 3D and AutoCAD-integrated UI layouts for industrial applications</li>
+          <li>Led creative direction and design system unification across 4 simultaneous product initiatives in regulated industrial environment — visual standards, brand governance, component documentation adopted cross-functionally</li>
+          <li>Produced comprehensive brand documentation reducing internal dissemination needs 50% — engineering teams building to visual spec without designer mediation</li>
+          <li>Directed 3D and AutoCAD-integrated UI visual design for industrial application interfaces — spatial design and motion-informed interaction at hardware-software intersection</li>
         </ul>
       </div>
 
       <div class="job">
-        <div class="job-title">Sr UX Designer</div>
+        <div class="job-title">Senior UX Designer — Inclusive Design &amp; Visual Systems</div>
         <a class="job-company" href="https://www.glynlyon.com" target="_blank">Glynlyon Inc</a>
         <div class="job-meta">
           <span class="material-symbols-outlined">calendar_month</span>
@@ -450,10 +384,9 @@ export const resumeHTML = `<!DOCTYPE html>
           Phoenix, AZ | Office
         </div>
         <ul>
-          <li>Enhanced user experience through research and inclusive design that adhered to WCAG and ADA standards</li>
-          <li>Drove data-informed design decisions to roadmap UI features that increased ease of use by 65%</li>
-          <li>Mastered and communicated technical concepts to ensure feasible development on multiple platforms</li>
-          <li>Led cross-functional teams to define user needs through Design Thinking workshops</li>
+          <li>Designed WCAG 2.1 and ADA-compliant inclusive digital experiences — championing accessibility and inclusive design as non-negotiable visual and interaction standards across multi-platform products</li>
+          <li>Drove data-informed visual design decisions through user research and usability testing — UI features increasing ease of use 65% through improved visual hierarchy and interaction clarity</li>
+          <li>Led Design Thinking workshops aligning brand, product, and engineering on visual strategy and user-centered design principles</li>
         </ul>
       </div>
     </main>
@@ -463,58 +396,76 @@ export const resumeHTML = `<!DOCTYPE html>
 
       <div class="sidebar-section">
         <h2 class="section-title">Summary</h2>
-        <p class="summary-quote" style="color: #212121; font-weight:700">"Full-stack&nbsp; Designer—from strategy, research, interaction design to coded, responsive, high-fidelity prototypes—defining personas, journey maps, sitemaps, user flows that drive results in e-commerce, retail, and industrial applications."</p>
+        <p class="summary-quote" style="color: #212121; font-weight:700">"VP-level UX Creative Director — 12+ years governing brand standards, architecting enterprise design systems, and directing visual design across consumer-facing digital channels in regulated, eCommerce, and financial services environments."</p>
         <ul class="summary-bullets">
-          <li>11+ years in end-to-end delivery for ecommerce/retail</li>
-          <li>Translate research/analysis, journey mapping into service blueprints creating solutions for task completion, revenue growth, retention, engagement analytics, dashboards</li>
-          <li>Defining product vision with executive planning</li>
-          <li>AI for prototypes, high-fidelity mockups</li>
-          <li>User-centered designs</li>
-          <li>Data-driven designs, usability testing, A/B testing, inclusive design, AI/ML for personalized fashion/retail experiences</li>
+          <li>Enterprise design system architect — Figma-native, 60–90% org adoption, $370K labor savings</li>
+          <li>Brand governance &amp; visual standards enforcement across distributed agile teams</li>
+          <li>Motion design, typography, iconography, color systems, asset creation</li>
+          <li>People manager — led 5-person team; mentorship &amp; dotted-line creative direction</li>
+          <li>ADA/WCAG 2.1 compliance &amp; inclusive design advocacy</li>
+          <li>AI innovation champion — shipped LLM platform with documented commercial outcomes</li>
         </ul>
       </div>
 
       <div class="sidebar-section">
         <h2 class="section-title">Key Achievements</h2>
         <ul class="dot-list">
-          <li>Data Driven UX Roadmaps</li>
-          <li>Driving Executives Decisions</li>
-          <li>Cross-Functional Leadership</li>
-          <li>Design Tools Development</li>
-          <li>Design System Architect</li>
+          <li>60–90% design system org adoption</li>
+          <li>$370K annual labor savings</li>
+          <li>–17% → +2% margin via AI platform</li>
+          <li>43% checkout abandonment reduction</li>
+          <li>10+ C-suite initiatives approved</li>
+          <li>100% ADA compliance delivered</li>
         </ul>
       </div>
 
       <div class="sidebar-section">
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title">Skills &amp; Tools</h2>
         <div class="tag-list">
-          <span class="tag">Agile</span>
-          <span class="tag">Design Architecture</span>
+          <span class="tag">Creative Direction</span>
+          <span class="tag">Visual Design</span>
+          <span class="tag">Brand Strategy</span>
+          <span class="tag">Brand Identity</span>
+          <span class="tag">Design Systems</span>
+          <span class="tag">Style Guides</span>
           <span class="tag">Figma</span>
-          <span class="tag">e-Com Focus</span>
-          <span class="tag">Coded Prototypes</span>
-          <span class="tag">Design Tokens</span>
-          <span class="tag">Research</span>
-          <span class="tag">Analysis</span>
-          <span class="tag">Labor Management and Leadership</span>
+          <span class="tag">After Effects</span>
+          <span class="tag">Lottie</span>
+          <span class="tag">Principle</span>
+          <span class="tag">Motion Design</span>
+          <span class="tag">Illustrator</span>
+          <span class="tag">Typography</span>
+          <span class="tag">Iconography</span>
+          <span class="tag">Color Systems</span>
+          <span class="tag">ADA Compliant</span>
+          <span class="tag">WCAG 2.1</span>
+          <span class="tag">Inclusive Design</span>
+          <span class="tag">User Research</span>
+          <span class="tag">Usability Testing</span>
+          <span class="tag">Agile / SAFe</span>
           <span class="tag">MUI React</span>
           <span class="tag">Google MD3</span>
+          <span class="tag">eCommerce UX</span>
+          <span class="tag">Financial Services</span>
         </div>
       </div>
 
       <div class="sidebar-section">
-        <h2 class="section-title">AI</h2>
+        <h2 class="section-title">AI &amp; Innovation</h2>
         <div class="tag-list">
-          <span class="tag">LLM-based</span>
+          <span class="tag">LLM Workflows</span>
           <span class="tag">Agentic AI</span>
-          <span class="tag">RAG systems</span>
+          <span class="tag">RAG Systems</span>
+          <span class="tag">AI-Driven Design</span>
           <span class="tag">Multimodal AI</span>
+          <span class="tag">Responsible AI</span>
         </div>
       </div>
 
       <div class="sidebar-section">
         <h2 class="section-title">Education</h2>
-        <div class="edu-degree">Bachelor of Art</div>
+        <div class="edu-degree">Bachelor of Arts</div>
+        <div style="font-size:8.5pt; color:var(--mid); margin-bottom:2px;">Media Arts, Animation &amp; Visual Design</div>
         <div class="edu-school">The Art Institute of Phoenix</div>
         <div class="edu-meta">
           <span class="material-symbols-outlined">calendar_month</span>
@@ -522,13 +473,23 @@ export const resumeHTML = `<!DOCTYPE html>
           <span class="material-symbols-outlined">location_on</span>
           Phoenix, AZ
         </div>
+        <div style="margin-top:8px; font-size:8pt; color:var(--mid); line-height:1.55;">
+          NASBA Agile &amp; PM (891/1000) · Microsoft Data &amp; Dev (95%) · AI Test Automation (100%) · CompTIA A+ &amp; Network+
+        </div>
       </div>
-
-      <a class="share-link" href="#">Share Resume &gt;&gt;&gt;</a>
 
     </aside>
   </div><!-- /body -->
 </div><!-- /page -->
+</body>
+</html><!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
 </body>
 </html>`;
 
